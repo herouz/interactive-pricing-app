@@ -1,0 +1,191 @@
+@import './global';
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F9FAFF;
+    background-image: url('../images/bg-pattern.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    margin-bottom: 30px;
+    text-align: center;
+    h2{
+        color: #2A3257;
+        font-size: 26px;
+        padding: 15px;
+    }
+    p{
+        color: #8A91A2;
+        font-size: 14px;
+    }
+}
+.pricing-component{
+    width: 650px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.display-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    h4{
+        color: #8A91A2;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    h2{
+        color: #2A3257;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+    }
+    span{
+        color: #8A91A2;
+        font-size: 14px;
+    }
+}
+.range{
+    margin-bottom: 30px;
+}
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 36px;
+  width: 36px;
+  background-image: url('../images/icon-slider.svg');
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-color: #23AEA1;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #E6E8EE;
+  border-radius: 10px;
+}
+input[type=range]::-ms-fill-lower {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 0 1px rgba(13, 13, 13, 0.2);
+  background: red;
+  border: 2px solid #cfd8dc;
+  border-radius: 10px;
+}
+.checkboxs{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #8A91A2;
+}
+.toggle-btn{
+    width: 45px;
+    height: 24px;
+    background-color: #23AEA1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2px;
+    margin-left: 10px;
+    cursor: pointer;
+    span{
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+}
+.yearly p{
+    padding: 6px;
+    background-color: #FEEFEB;
+    color: #ff8457;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.component-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;
+    border-top: 1px solid #8A91A2;
+    width: 650px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 40px;
+}
+.features{
+    p{
+        color: #8A91A2;
+        font-size: 14px;
+        padding: 10px 0;
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+.start-btn{
+    border: none;
+    background-color: #293356;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.right-flex{
+    justify-content: flex-end;
+    background-color: #D0D8EF;
+}
+
+@media screen and (max-width: 767px) {
+    .component-footer, .pricing-component{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .component-footer, .pricing-component{
+        width: 400px;
+    }
+    .checkboxs{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 430px) {
+    .component-footer, .pricing-component{
+        width: 350px;
+        padding: 20px;
+    }
+    .component-footer{
+        flex-direction: column;
+        .features{
+            margin-bottom: 20px;
+        }
+    }
+    
+}

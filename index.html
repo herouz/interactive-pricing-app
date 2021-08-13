@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Pricing</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Simple, traffic-based pricing</h2>
+            <p>Sign-up our 30 day trial. No credit card required</p>
+        </header>
+        <section class="pricing-component">
+            <div class="display-details">
+                <h4>100k pageviews</h4>
+                <h2>$<p class="price">16.00</p> <span class="status">/month</span></h2>
+            </div>
+            <input  onchange="getValue(this.value)" type="range" class="range">
+            <div class="checkboxs">
+                <div class="form-control">
+                    <label for="monthly">Monthly Billing</label>
+                    <div onclick="handleToggle()" class="toggle-btn">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form-control yearly">
+                    <label for="yearly">Yearly Billing</label>
+                    <p>25% discount</p>
+                </div>
+
+            </div>               
+        </section>
+        <div class="component-footer">
+            <div class="features">
+                <p><img src="./images/icon-check.svg" alt="check"> Unlimited websites</p>
+                <p><img src="./images/icon-check.svg" alt="check"> 100% dat ownership</p>
+                <p><img src="./images/icon-check.svg" alt="check"> Email reports</p>
+            </div>
+            <button class="start-btn">Start my trial</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
